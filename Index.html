@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>pepsi website landing page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="/image/techs 1.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div>
+        <img src="./logo.png" alt="logo" style="width: 100px; height: 100px" />
+      </div>
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Product</a>
+        </li>
+        <li>
+          <a href="#">whats new</a>
+        </li>
+        <li>
+          <a href="#">News letter</a>
+        </li>
+        <li>
+          <a href="#">contact</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="sec">
+      <div class="content">
+        <div class="textBox">
+          <h2>That's What<br /><span>I like</span></h2>
+          <p>
+            PepsiCo, Inc. is an American multinational food, snack, and beverage
+            corporation headquartered in Harrison, New York, in the hamlet of
+            Purchase. PepsiCo's business encompasses all aspects of the food and
+            beverage market. It oversees the manufacturing, distribution, and
+            marketing of its products.
+          </p>
+          <a href="#">View All products</a>
+        </div>
+        <div class="imgBox">
+          <img src="./pepsi001.png" class="pepsi" />
+        </div>
+      </div>
+      <ul class="thumb">
+        <li>
+          <img
+            src="./pepsi001.png"
+            onclick="imgSlider('./pepsi001.png');changeBgcolor('#0062be')"
+          />
+        </li>
+        <li>
+          <img
+            src="./pepsi002.png"
+            onclick="imgSlider('./pepsi002.png');changeBgcolor('#e60c2c')"
+          />
+        </li>
+        <li>
+          <img
+            src="./pepsi003.png"
+            onclick="imgSlider('./pepsi003.png');changeBgcolor('darkgrey')"
+          />
+        </li>
+      </ul>
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="./facebook.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./twitter.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./instagram.png" /></a>
+        </li>
+      </ul>
+    </section>
+    <section
+      style="
+        width: 100%;
+        min-height: 40vh;
+        padding: 50px;
+        background-color: #0062be;
+      "
+    >
+      <dl>
+        <dt
+          style="
+            font-size: 40px;
+            text-decoration: underline;
+            font-weight: bolder;
+            color: white;
+          "
+        >
+          About Us
+        </dt>
+        <dd style="color: white">
+          Pepsi was first invented in 1893 as "Brad's Drink" by Caleb Bradham,
+          who sold the drink at his drugstore in New Bern, North Carolina. It
+          was renamed Pepsi-Cola in 1898, "Pepsi" because it was advertised to
+          relieve dyspepsia (indigestion) and "Cola" referring to the cola
+          flavor. Some have also suggested that "Pepsi" may have been a
+          reference to the drink aiding digestion like the digestive enzyme
+          pepsin, but pepsin itself was never used as an ingredient to
+          Pepsi-Cola.The original recipe also included sugar and vanilla.
+          Bradham sought to create a fountain drink that was appealing and would
+          aid in digestion and boost energy.
+        </dd>
+      </dl>
+      <br /><br />
+      <div class="footer">
+        <h1 style="color: white; text-decoration: underline; font-size: 40px">
+          Contact us
+        </h1>
+        <br />
+        <div style="display: flex; color: white">
+          <i class="fa fa-envelope" style="font-size: 30px"></i>
+          <p style="padding-left: 5px">Mail id:pesi123@gmail.com</p>
+        </div>
+        <div style="display: flex; color: white">
+          <i class="fa fa-phone-square" style="font-size: 30px"></i>
+          <p style="padding-left: 5px">contact:1234567890</p>
+        </div>
+
+        <br />
+      </div>
+    </section>
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".pepsi").src = anything;
+      }
+      function changeBgcolor(color) {
+        const sec = document.querySelector(".sec");
+        sec.style.background = color;
+      }
+    </script>
+  </body>
+</html>
